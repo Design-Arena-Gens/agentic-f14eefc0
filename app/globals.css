@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap");
+
+:root {
+  --font-primary: "Poppins", system-ui, sans-serif;
+  --font-secondary: "Nunito", system-ui, sans-serif;
+  --stretch-mat-start: #a6f0ff;
+  --stretch-mat-end: #fbc2eb;
+  --stretch-aura-start: #ffb2ff;
+  --stretch-aura-end: #b0f3ff;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: rgb(33 37 79);
+  background-color: #fdf5ff;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-secondary);
+}
+
+@keyframes floatBackdrop {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(24px) scale(1.03);
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
